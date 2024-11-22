@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS2402 班级寝室信息</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, rgba(255, 0, 150, 0.6), rgba(0, 204, 255, 0.6));
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.2); /* 内阴影效果，增强深度 */
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.1); /* 半透明白色背景 */
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            width: 80%;
+            max-width: 900px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #FFFFFF; /* 使用纯白色 */
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* 深色阴影提高清晰度 */
+        }
+
+        h2 {
+            font-size: 2em;
+            margin: 20px 0 10px;
+            color: #FFFFFF; /* 使用纯白色 */
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* 深色阴影增强对比 */
+        }
+
+        .room-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .room-item {
+            background-color: rgba(255, 255, 255, 0.2); /* 半透明背景 */
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 1.2em;
+            color: #f8f8f8; /* 更亮的白色 */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            border: 2px solid rgba(0, 204, 255, 0.6); /* 青色边框，适配背景 */
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* 字体深色阴影 */
+        }
+
+        .room-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(255, 0, 150, 0.4); /* 粉色光晕效果 */
+        }
+
+        .room-item a {
+            text-decoration: none; /* 去掉超链接的默认下划线 */
+            color: inherit; /* 继承父元素的字体颜色 */
+        }
+        
+        .room-item span {
+            font-weight: bold;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* 深色阴影突出文字 */
+        }
+
+        /* 男寝样式 */
+        .male-room {
+            border-color: rgba(0, 204, 255, 0.8); /* 青色边框 */
+        }
+
+        /* 女寝样式 */
+        .female-room {
+            border-color: rgba(255, 0, 150, 0.8); /* 粉色边框 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CS2402 班级寝室信息</h1>
+
+        <!-- 男寝 -->
+        <h2>男生寝室</h2>
+        <div class="room-list">
+            <div class="room-item male-room">
+                <span>208号寝室</span>
+            </div>
+            <div class="room-item male-room">
+                <span>209号寝室</span>
+            </div>
+            <div class="room-item male-room">
+                <span>210号寝室</span>
+            </div>
+            <div class="room-item male-room">
+                <a href="https://caoxuan5211.github.io/cs2402-211-homework/" target="_blank" title="点击进入 211 号寝室主页">
+                    <span>211号寝室</span>
+                </a>
+            </div>
+            <div class="room-item male-room">
+                <span>212号寝室</span>
+            </div>
+            <div class="room-item male-room">
+                <span>213号寝室</span>
+            </div>
+            <div class="room-item male-room">
+                <span>214号寝室</span>
+            </div>
+        </div>
+
+        <!-- 女寝 -->
+        <h2>女生寝室</h2>
+        <div class="room-list">
+            <div class="room-item female-room">
+                <span>408号寝室</span>
+            </div>
+            <div class="room-item female-room">
+                <span>409号寝室</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
